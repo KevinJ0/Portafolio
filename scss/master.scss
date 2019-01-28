@@ -6,9 +6,9 @@ html {
 
 * {
     box-sizing: border-box;
-}
+} 
 
-
+ 
 body {
     @include background;
     background-color: $primary-color;
