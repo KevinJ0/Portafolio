@@ -68,12 +68,12 @@ $secondary-color: #12a3cf;
     background: rgba(darken($primary-color, 0.1), 0.6);
 }
 
-.menu-side-right {
+.menu-side-left {
     bottom: 0;
     left: 0;
 }
 
-.menu-side-left {
+.menu-side-right {
     top: 0;
     right: 0;
 }
@@ -92,10 +92,9 @@ $secondary-color: #12a3cf;
 .portrait {
     width: 250px;
     height: 250px;
-    background: url('../img/portrait1.jpg');
-    background-position: center;
     border-radius: 50%;
     border: solid 3px $secondary-color;
+    background-image: url('../img/portrait1.jpg');
 }
 
 .nav-item {
@@ -105,7 +104,7 @@ $secondary-color: #12a3cf;
 
 }
 
-.nav-item:first-child a {
+.nav-item:first-child a {   
     color: $secondary-color;
 }
 

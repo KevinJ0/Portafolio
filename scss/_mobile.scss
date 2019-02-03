@@ -1,0 +1,67 @@
+// Widescreens
+
+@include mediaXL {}
+
+// Destops & Laptop
+@include mediaLg {}
+
+// Tablets & small latops
+@include mediaMd {
+    .menu-branding .portrait {
+        width: auto;
+        height: 20vh;
+        min-height: 90px;
+        max-height: 500px;
+
+
+
+    }
+
+    main {
+
+        text-align: center;
+        align-items: center;
+
+        .lg-heading {
+
+            line-height: 1;
+            margin-bottom: 1rem;
+        }
+    }
+
+    ul.menu-nav {
+        height: 70vh;
+    }
+
+    div.menu-branding {
+        height: 30vh;
+    }
+
+    .menu-side-left {
+        width: 100%;
+        height: 30vh;
+        bottom: inherit;
+        right: 0;
+        top: 0px;
+    }
+
+    .menu-side-right {
+        width: 100%;
+        height: 70vh;
+        top: inherit; // truco para anular el top, si se pone un top y luego un bottom, no funciona el bottom
+        bottom: 0px;
+        left: 0;
+    }
+    .nav-link{
+        font-size: 24px;}
+}
+
+// Smartphones
+@include mediaSm {
+
+
+    main#home h1 {
+        margin-top: 10vh;
+
+    }
+}

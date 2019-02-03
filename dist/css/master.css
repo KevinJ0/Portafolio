@@ -32,19 +32,19 @@
 .menu-nav {
   margin: 0;
   padding: 0;
-  background: rgba(60, 60, 60, 0.99);
+  background: rgba(13, 29, 25, 0.99);
   list-style: none; }
 
 .menu-branding {
   margin: 0;
   padding: 0;
-  background: rgba(68, 68, 68, 0.6); }
+  background: rgba(18, 39, 34, 0.6); }
 
-.menu-side-right {
+.menu-side-left {
   bottom: 0;
   left: 0; }
 
-.menu-side-left {
+.menu-side-right {
   top: 0;
   right: 0; }
 
@@ -61,10 +61,9 @@
 .portrait {
   width: 250px;
   height: 250px;
-  background: url("../img/portrait1.jpg");
-  background-position: center;
   border-radius: 50%;
-  border: solid 3px #12a3cf; }
+  border: solid 3px #12a3cf;
+  background-image: url("../img/portrait1.jpg"); }
 
 .nav-item {
   transition: all 0.5s ease-out; }
@@ -87,6 +86,41 @@
 .show {
   transform: translate3d(0px, 0, 0); }
 
+@media screen and (max-width: 768px) {
+  .menu-branding .portrait {
+    width: auto;
+    height: 20vh;
+    min-height: 90px;
+    max-height: 500px; }
+  main {
+    text-align: center;
+    align-items: center; }
+    main .lg-heading {
+      line-height: 1;
+      margin-bottom: 1rem; }
+  ul.menu-nav {
+    height: 70vh; }
+  div.menu-branding {
+    height: 30vh; }
+  .menu-side-left {
+    width: 100%;
+    height: 30vh;
+    bottom: inherit;
+    right: 0;
+    top: 0px; }
+  .menu-side-right {
+    width: 100%;
+    height: 70vh;
+    top: inherit;
+    bottom: 0px;
+    left: 0; }
+  .nav-link {
+    font-size: 24px; } }
+
+@media screen and (max-width: 500px) {
+  main#home h1 {
+    margin-top: 10vh; } }
+
 html {
   font-size: 16px; }
 
@@ -94,7 +128,7 @@ html {
   box-sizing: border-box; }
 
 body {
-  background-color: #444;
+  background-color: #122722;
   height: 100%;
   color: white;
   margin: 0;
@@ -112,7 +146,7 @@ body {
       width: 100%;
       height: 100%;
       z-index: -1;
-      background: rgba(68, 68, 68, 0.8); }
+      background: rgba(18, 39, 34, 0.8); }
 
 h1,
 h2,
@@ -128,7 +162,7 @@ h3 {
   h3.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    background: rgba(73, 73, 73, 0.5); }
+    background: rgba(21, 46, 40, 0.5); }
 
 a {
   text-decoration: none;
@@ -157,4 +191,4 @@ main {
   main#home {
     overflow: hidden; }
     main#home h1 {
-      margin-top: 20vh; }
+      margin-top: 10vh; }
