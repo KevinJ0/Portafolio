@@ -104,10 +104,6 @@ $secondary-color: #12a3cf;
 
 }
 
-.nav-item:first-child a {   
-    color: $secondary-color;
-}
-
 .nav-link {
 
     margin: 1rem 0;
@@ -128,6 +124,11 @@ $secondary-color: #12a3cf;
 
     transform: translate3d(0px, 0, 0);
 
+}
+
+.current {   
+    color: $secondary-color;
+   
 }
 
 @for $x from 1 through 4 {
