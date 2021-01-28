@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+}
+.contact {
+  padding: 10px 0 10px;
+  max-width: 600px;
+  margin: auto;
+}
+.contact-form {
+  background-color: rgb(24, 51, 45);
+  border: #ff000000 solid 1px;
+}
+#contact-us {
+  padding: 20px 10px;
+}
+.contact-text {
+  margin: 45px auto;
+}
+
+.mail-message-area {
+  width: 100%;
+  padding: 0 15px;
+}
+
+.mail-message {
+  width: 100%;
+  -webkit-transition: all 0.7s;
+  -moz-transition: all 0.7s;
+  transition: all 0.7s;
+  border-radius: 0;
+}
+
+.not-visible-message {
+  height: auto;
+  opacity: 0;
+  margin: 0px 5px 5px 5px;
+  background: lighten(rgb(18, 39, 34), 5);
+  padding: 0.5rem;
+  border-left: #0f82a5 5px solid;
+}
+
+.visible-message {
+  height: auto;
+  opacity: 1;
+  margin: 25px auto 0;
+}
+
+/* Input Styles */
+
+.form {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.075);
+  margin-bottom: 25px;
+  color: #727272;
+  font-size: 13px;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  background-color: rgb(18, 39, 34);
+  transition: all 0.4s;
+}
+
+.form:hover {
+  border: 1px solid #8bc3a3;
+}
+
+.form:focus {
+  color: white;
+  outline: none;
+  border: 1px solid #8bc3a3;
+}
+
+.textarea {
+  height: 200px;
+  max-height: 200px;
+  max-width: 100%;
+  color: #fff;
+  background-color: rgb(18, 39, 34);
+}
+
+/* Generic Button Styles */
+.btnContainer {
+  position: relative;
+  padding-bottom: 39px;
+}
+
+.button {
+  padding: 8px 12px;
+  background: #0a5175;
+  display: block;
+  width: 120px;
+  margin: 10px 0 0px 0;
+  border-radius: 3px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  font-size: 0.8em;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+}
+#loadingIcon {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 0.3s;
+  opacity: 1;
+  top: 0;
+}
+.button:hover {
+  background: #8bc3a3;
+  color: white;
+}
+
+/* Send Button Styles */
+
+.form-btn {
+  z-index: 999;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 180px;
+  display: block;
+  height: auto;
+  background: rgb(45, 131, 6);
+  padding: 15px;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  margin: auto;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-btn:hover {
+  background: #12A3CF;
+  color: white;
+  border: none;
+}
+
+.form-btn:active {
+  opacity: 0.9;
+}
+center {
+  margin-top: 330px;
+}
+input {
+  position: relative;
+  color: white !important;
+}
