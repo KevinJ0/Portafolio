@@ -7,16 +7,16 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Portafolio Kevin</title>
   <link rel="shortcut icon" href="dist/img/programming.png" type="image/x-icon">
-  <link rel="stylesheet" href="dist/css/master.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
     integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
   <script src="node_modules\jquery\dist\jquery.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="dist/css/master.css">
 </head>
-
-<body id="bg-img">
-  <header>
-    <div class="menu-btn" style="top:35px;">
+<body >
+  
+<header>
+    <div class="menu-btn" >
       <div class="btn-line"></div>
       <div class="btn-line"></div>
       <div class="btn-line"></div>
@@ -25,35 +25,253 @@
 
       <ul class="menu-nav">
         <li class="nav-item">
-          <a class="nav-link current" href="index.html">INICIO</a>
+          <a class="nav-link current" id="linkHome" href="#home">INICIO</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="pages/about.html">ACERCA DE MI</a>
+          <a class="nav-link" id="linkAbout" href="#about">ACERCA DE MI</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="pages/mywork.html">MI TRABAJO</a>
+          <a class="nav-link" id="linkWork" href="#work">MI TRABAJO</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="pages/reachme.html">CONTACTARME</a>
+          <a class="nav-link" id="linkReachme" href="#reachme">CONTACTARME</a>
         </li>
       </ul>
     </div>
 
-    <div class="menu-side-left">
+    <!-- <div class="menu-side-left">
       <div class="menu-branding">
         <img src='dist/img/portrait1.jpg' class="portrait">
       </div>
-    </div>
+    </div> -->
   </header>
-  <main id="home">
 
+         <!--------------------- Home --------------------->
+
+  <div id="bg-img">
+  <main  id="home"> 
     <h1 class="lg-heading">Kevin <span class="text-secondary">J.</span></h1>
     <h2 class="sm-heading">Web Developer</h2>
     <div target="_blank" class="icons"><a href="https://github.com/KevinJ0/My-Learning-Tracker"><i
-          class="fab fa-github"></i></a></div>
+          class="fab fa-github"></i></a></div></div>
   </main>
+</div>
 
+         <!--------------------- About me --------------------->
+
+  <main id="about">
+
+        <h1 class="lg-heading">Acerca de <span class="text-secondary">mi</span></h1>
+        <h2 class="sm-heading">Dejame contarte algo acerca de mi...</h2>
+        <div class="about-info">
+            
+            <div class="bio">
+                <h3 class="text-secondary">
+                    BIO
+                </h3>
+                <p>Me llamó Kevin J. Rosario, soy actualmente estudiante en término de la carrera de ingeniería en
+                    sistemas y computación en la <b class="text-secondary">Universidad O&M</b>.
+                </p>
+                <p>Tengo un gusto especial por la <b class="text-secondary">programación y desarrollo de aplicaciones
+                        web.</b> Me encanta profundizar en las tecnologías en las cuales trabajo y sacarle el mayor
+                    provecho.
+                
+                    Trabajo con Angular, C# y ASP .Net Core. Me apasiona el
+                    idioma <b class="text-secondary">Ingles</b> y lo estudio cada día.
+                </p>
+                <p>
+                    Disfruto haciendo deportes y actividades movidas, me adapto
+                    fácilmente a cualquier entorno de trabajo y me relaciono bien con los demás. Me fascina  estudiar y
+                    aprender cosas nuevas.</p>
+
+            </div>
+
+            <div id="title" class="job-1 job">
+                <h1>Grados académicos obtenidos</h1>
+            </div>
+
+            <div class="job-2 job">
+                <h3>INGENIERIA EN SISTEMA Y COMPUTACIÓN</h3>
+                <h5>Universidad O&M</h5>
+
+            </div>
+            <div class="job-3 job">
+                <h3>TÉCNICO PROFESIONAL EN INFORMÁTICA </h3>
+                <h5>Liceo Técnico Calasanz San Eduardo</h5>
+
+            </div>
+        </div>
+    </main>
+
+         <!--------------------- My Works --------------------->
+
+    <main id="work">
+
+      <h1 class="lg-heading">Mi <span class="text-secondary">Trabajo</span></h1>
+      <h2 class="sm-heading">Mira algunos de mis proyectos...</h2>
+      <div class="projects">
+          <div class="item">
+              <a target="_blank" href="https://kevin-peli.web.app/home">
+                  <img src="../dist/img/projects/angular.png" alt="Project">
+              </a>
+              <a target="_blank" href="https://kevin-peli.web.app/home" class="btn-light">
+                  <i class="fas fa-eye"></i> Movie theater
+              </a>
+              <a target="_blank" href="https://github.com/KevinJ0/MovieShop"  class="btn-dark">
+                  <i class="fab fa-github"></i> Github
+              </a>
+          </div>
+
+          <div class="item">
+              <a target="_blank" href="https://calculadorayarda.web.app/">
+                  <img src="../dist/img/projects/angular.png" alt="Project">
+              </a>
+              <a target="_blank" href="https://calculadorayarda.web.app/" class="btn-light">
+                  <i class="fas fa-eye"></i> Calculadora de tela
+              </a>
+              <a target="_blank" href="https://github.com/KevinJ0/calculadora_tela" class="btn-dark">
+                  <i class="fab fa-github"></i> Github
+              </a>
+          </div>
+          <div class="item">
+              <a target="_blank" href="http://kevinj0-001-site1.itempurl.com/">
+                  <img src="../dist/img/projects/netcore.jpg" alt="Project">
+              </a>
+              <a target="_blank" href="http://kevinj0-001-site1.itempurl.com/" class="btn-light">
+                  <i class="fas fa-eye"></i> Suri gestor de actividades
+              </a>
+              <a target="_blank" href="https://github.com/KevinJ0/Suri-task-management" class="btn-dark">
+                  <i class="fab fa-github"></i> Github
+              </a>
+          </div>
+          <div class="item">
+              <a target="_blank" href="https://github.com/KevinJ0/Votacion_Automatizada">
+                  <img src="../dist/img/projects/netcore.jpg" alt="Project">
+              </a>
+              <a href="#!" class="btn-light">
+                  <i class="fas fa-eye"></i> Votación automatizada
+              </a>
+              <a target="_blank" href="https://github.com/KevinJ0/Votacion_Automatizada" class="btn-dark">
+                  <i class="fab fa-github"></i> Github
+              </a>
+          </div>
+          <div class="item">
+              <a target="_blank" href="https://github.com/KevinJ0/Facturaci-n-simple">
+                  <img src="../dist/img/projects/java.png" alt="Project">
+              </a>
+              <a href="#!" class="btn-light">
+                  <i class="fas fa-eye"></i> Sistema de facturación
+              </a>
+              <a target="_blank" href="https://github.com/KevinJ0/Facturaci-n-simple" class="btn-dark">
+                  <i class="fab fa-github"></i> Github
+              </a>
+          </div>
+          <div class="item">
+              <a target="_blank" href="https://github.com/KevinJ0/Copy-paste-automatizado">
+                  <img src="../dist/img/projects/java.png" alt="Project">
+              </a>
+              <a target="_blank" href="#!" class="btn-light">
+                  <i class="fas fa-eye"></i> Copiado y pegado automatizados
+              </a>
+              <a target="_blank" href="https://github.com/KevinJ0/Copy-paste-automatizado" class="btn-dark">
+                  <i class="fab fa-github"></i> Github
+              </a>
+          </div>
+      </div>
+  </main>
+         <!--------------------- Reachme --------------------->
+
+  <main id="reachme">
+
+
+    <h1 class="lg-heading">Contáctame<span class="text-secondary"> me</span></h1>
+    <h2 class="sm-heading">Así es como puedes contactarme...</h2>
+    
+    <form class="inner contact" id="formulario">
+        <div class="contact-form">
+            <div id="contact-us">
+                <div class="wow animated" data-wow-delay="1.5s">
+                    <input type="email" name="from_email" id="from_email" required="required" class="form"
+                        placeholder="Correo" required />
+                    <input type="text" name="subject" id="subject" required required="required" class="form"
+                        placeholder="Encabezado" />
+                </div>
+
+                <div class="wow animated" data-wow-delay=".5s">
+                    <textarea name="message" id="message" class="form textarea" placeholder="Mensaje"
+                        required></textarea>
+                </div>
+                <div class="btnContainer fullwidth">
+                    <button id="form-btn" class="form-btn semibold">Enviar</button>
+                    <img id="loadingIcon" src="../dist/img/loading.svg" alt="Enviando...">
+                </div>
+            </div>
+
+            <div id="not-visible-message" class="alert gray-bg mail-message not-visible-message">
+                <strong>Gracias !</strong> Tu correo ha sido enviado.
+            </div>
+        </div>
+
+    </form>
+    </div>
+
+</main>
+<footer id="main-footer">
+
+  Copyright &copy; 2021
+
+</footer>
 </body>
 <script src="dist/js/main.js"></script>
 
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+<script type="text/javascript">
+    (function () {
+        emailjs.init("user_IJEGxrrN7E3FWwkMjgnId");
+    })();
+
+
+    document.addEventListener("DOMContentLoaded", function () {
+        document.getElementById("formulario").addEventListener('submit', enviar);
+    });
+    var formBtn = document.getElementById("form-btn");
+    var msj = document.getElementById("not-visible-message");
+    var loadingIcon = document.getElementById("loadingIcon");
+
+    function fadeOutMsj() {
+        msj.style.opacity = 0;
+    }
+
+
+    function enviar(event) {
+
+        event.preventDefault();
+
+        formBtn.style.opacity = 0;
+        loadingIcon.style.opacity = 1;
+        let data = {
+            from_email: this.from_email.value,
+            message: this.message.value,
+            subject: this.subject.value,
+        };
+
+        emailjs.send("service_1avi6dj", "template_wl62pn5", data)
+            .then(function (response) {
+                if (response.text === 'OK') {
+                    msj.style.opacity = 1;
+                    setTimeout(fadeOutMsj, 4000);
+                    formBtn.style.opacity = 1;
+                    loadingIcon.style.opacity = 0;
+                    this.message.value = "";
+                    this.subject.value = "";
+                    this.from_email.value = "";
+                }
+                console.log("SUCCESS. status=%d, text=%s", response.status, response.text);
+            }, function (err) {
+                alert('Ocurrió un problema al enviar el correo');
+                console.log("FAILED. error=", err);
+            });
+
+    }
+</script>
 </html>
